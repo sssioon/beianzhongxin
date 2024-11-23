@@ -1,0 +1,246 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>公安机关互联网站安全管理服务平台</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="./css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+	<link href="./css/css.css" rel="stylesheet" media="screen">
+	<link href="./css/css2.css" rel="stylesheet" media="screen">
+	<link href="./css/loginform.css" rel="stylesheet" />
+  	<link href="./css/nismsp.css" rel="stylesheet" />
+	<script type="text/javascript" src="./js/custom/lubotu.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script type="text/javascript">
+	var taken_for_user = '01cbbfe1-972e-4921-b93c-1cb82fdd55f7';
+	</script>
+	<script type="text/javascript" src="/js/custom/defaultToken.js"></script>
+	<script src="/js/custom/recordquery.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+    function ShowElement(element) {
+        var oldhtml = element.innerHTML;
+        //创建新的input元素
+        var newobj = document.createElement('input');
+        //为新增元素添加类型
+        newobj.type = 'text';
+        //为新增元素添加value值
+        newobj.value = oldhtml;
+        //为新增元素添加光标离开事件
+        newobj.onblur = function() {
+            //当触发时判断新增元素值是否为空，为空则不修改，并返回原有值
+            element.innerHTML = this.value == oldhtml ? oldhtml : this.value;
+            //当触发时设置父节点的双击事件为ShowElement
+            element.setAttribute("ondblclick", "ShowElement(this);");
+        }
+        //设置该标签的子节点为空
+        element.innerHTML = '';
+        //添加该标签的子节点，input对象
+        element.appendChild(newobj);
+        //设置选择文本的内容或设置光标位置（两个参数：start,end；start为开始位置，end为结束位置；如果开始位置和结束位置相同则就是光标位置）
+        newobj.setSelectionRange(0, oldhtml.length);
+        //设置获得光标
+        newobj.focus();
+
+        //设置父节点的双击事件为空
+        newobj.parentNode.setAttribute("ondblclick", "");
+
+    }
+</script>
+ <div class="wrapper">
+	<!-- 页面头 -->
+
+
+<div class="top-start">
+<div class="top-part">
+<!-- 氛围 -->
+<div class="hj-top-banner"></div>
+<!-- 头部搜索 -->
+<div class="search-bar-area">
+<div class="doodle-wrapper">
+<a class="" href="#"><img src="./img/logo.png" /> </a>
+</div>
+<div class="search-input-wrapper">
+<div class="search-input">
+<i class="hui-icon hui-icon-search"></i>
+<input type="text" placeholder="备案查询" value="" data-empty-link="#" />
+<div class="autocompletion-list-wrapper"></div>
+</div>
+<a class="btn-search" href="javascript:void(0);"
+onclick="window.location.href='/portal/recordQuery?token=01cbbfe1-972e-4921-b93c-1cb82fdd55f7'">查询</a>
+</div>
+</div>
+</div>
+<div class="dsp-banner-area">
+<div class="course-menu-area">
+<ul class="course-menu-list clearfix">
+<li class='active'><a class="menu-name " href="/portal/index"><span>首页</span> </a> </li>
+<li ><a class="menu-name" href="/portal/recordQuery"><span>公共查询</span> </a> </li>
+
+
+<li class='active'><a class="menu-name" href="/portal/recordInfo?query_type=1"><span>政策文件</span> </a> </li>
+
+
+
+<li class='active'><a class="menu-name" href="/portal/recordInfo?query_type=2"><span>通知公告</span> </a> </li>
+
+
+
+<li class='active'><a class="menu-name" href="/portal/recordInfo?query_type=3"><span>备案须知</span> </a> </li>
+
+
+
+<li class='active'><a class="menu-name" href="/portal/recordInfo?query_type=15"><span>政策解读</span> </a> </li>
+
+
+
+
+
+
+<li ><a class="menu-name" href="/portal/recordShow" onclick="loading()"><span>备案展厅</span> </a> </li>
+</ul>
+</div>
+</div>
+</div>
+	<!-- start:内容 -->
+    <div class="p_exinfo">
+      <!-- start:备案信息 -->
+      <div class="exinf_title" style='margin-left:125px;margin-left:10px;'>
+        <p><img src="./img/beianbgs.png" width="100%" height="100px">
+        <h3>联网备案信息</h3>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="p_cont">
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        		为了保护网络信息安全，保障公民、法人和其他组织的合法权益，维护国家安全和社会公共利益，
+        		公安机关将备案网站的基本情况公布如下：
+        </strong>
+        <div class="wzjb">
+          <h5>网站基本情况</h5>
+          <table class="" width="100%" border="1">
+              <tbody>
+                <tr>
+                  <td ondblclick="ShowElement(this)" width="30%">备案人姓名</td>
+                  <td ondblclick="ShowElement(this)" width="70%"></td>
+                </tr>
+                <tr>
+                  <td ondblclick="ShowElement(this)" width="30%">网站主域名</td>
+                  <td ondblclick="ShowElement(this)" width="70%">cbex.com.cn</td>
+                </tr>
+
+                <tr>
+                  <td ondblclick="ShowElement(this)" width="30%">开办主体</td>
+                  <td ondblclick="ShowElement(this)" width="70%">企业单位</td>
+                </tr>
+                <tr>
+                  <td ondblclick="ShowElement(this)" width="30%">网站类别</td>
+                  <td ondblclick="ShowElement(this)" width="70%">非交互式</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="wzjb">
+          <h5>网站所有者基本情况</h5>
+          <table class="" width="100%" border="1">
+              <tbody>
+
+	              <tr>
+	                  <td ondblclick="ShowElement(this)" width="30%">开办者名称</td>
+	                  <td ondblclick="ShowElement(this)" width="70%">北京产权交易所有限公司</td>
+	                </tr>
+
+
+
+                <tr>
+                  <td ondblclick="ShowElement(this)" width="30%">公安备案号</td>
+                  <td ondblclick="ShowElement(this)" width="70%">11010202000659</td>
+                </tr>
+                <tr>
+                  <td ondblclick="ShowElement(this)" width="30%">备案地公安机关 </td>
+                  <td ondblclick="ShowElement(this)" width="70%">北京市西城驻区大队</td>
+                </tr>
+                <tr>
+                  <td ondblclick="ShowElement(this)" width="30%">联网备案时间</td>
+                  <td ondblclick="ShowElement(this)" width="70%">2021-10-20</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <strong >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您如果发现该网站在网络经营活动中存在违反国家法律、法规的经营行为，请登录<a href="http://cyberpolice.mps.gov.cn/wfjb" target="_blank">网络违法犯罪举报网站</a>进行举报。</strong>
+      </div>
+      <!-- end:备案信息 -->
+    </div>
+    <div style="clear:both;"></div>
+    <!-- end:内容 -->
+	</div>
+	<!-- 页面尾 -->
+
+<link href="./css/nismsp2.css" rel="stylesheet" />
+	<div id="footer-ft" class=" hui-footer">
+	<div class="hui-footer-ft">
+	<div class="hui-footer-ft-row">
+	<p> 邮箱：support@beian.gov.cn&nbsp;&nbsp;&nbsp;&nbsp;邮编：100741&nbsp;&nbsp;&nbsp;&nbsp;地址：北京市东长安街14号&nbsp;&nbsp;&nbsp;&nbsp;网站标识码：bm09000026 </p>
+	</div>
+	<div class="hui-footer-ft-row-icon">
+	<div class="hui-footer-ft-icon">
+	<div class="hui-footer-ft-icon-0">
+	<script id="_jiucuo_" sitecode="bm09000026" src="https://pucha.kaipuyun.cn/exposure/jiucuo.js"></script>
+	</div>
+        <div class="hui-footer-ft-icon-1">
+	<img src="./img/new/garment.png" />
+	</div>
+	<div class="hui-footer-ft-icon-2">
+	<div class="hui-footer-ft-row">
+	<p class="hui-footer-ft-oncall"> <span>Copyright 公安部网络安全保卫局 All Rights Reserved</span> </p>
+	</div>
+	<div class="hui-footer-ft-row">
+	<p class="hui-footer-ft-contact"> <span><img src="./img/new/gongan.png" /><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102002019" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" target="_blank">京公网安备 11010102002019号</a> &nbsp;&nbsp;&nbsp;&nbsp;</span><a href="http://beian.miit.gov.cn/" target="_blank">京ICP备05070602号</a> </p>
+	</div>
+	</div>
+	<div class="hui-footer-ft-icon-1">
+	<img src="./img/new/erweima.png" />
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+<script type="text/javascript">
+	$("a").each(function(index,obj){
+		if($(obj).attr("href") != undefined){
+			if(($(obj).attr("href")).indexOf('/')>=0){
+			    if($(obj).attr("href").indexOf("?")>=0){
+					 $(obj).attr("href",$(obj).attr("href")+"&token="+taken_for_user);
+		 	    }else{
+		 	    	$(obj).attr("href",$(obj).attr("href")+"?token="+taken_for_user);
+		 	    }
+			}
+		}
+	});
+
+	$("a").on("click",function(event){
+	//	    event.preventDefault();//使a自带的方法失效，即无法调整到href中的URL(http://www.baidu.com)
+	//	    $.ajax({
+	//	           type: "POST",
+	//	           url: "url地址",
+	//	           contentType:"application/json",
+	//	           data: JSON.stringify({param1:param1,param2:param2}),//参数列表
+	//	           dataType:"json",
+	//	           success: function(result){
+	//	              //请求正确之后的操作
+	//	           },
+	//	           error: function(result){
+	//	              //请求失败之后的操作
+	//	           }
+	//	    });
+	});
+</script>
+
+</body>
+</html>
